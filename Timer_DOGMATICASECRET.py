@@ -11,7 +11,6 @@ import os
 
 
 
-import DOGMATICA_SCENE
 
 
 Months_leapyear = {
@@ -216,8 +215,10 @@ while True:
 
 
     if days_leftto_date1 == 0 and years_leftto_date1 == 0 and months_leftto_date1 == 0 and hours_leftto_date1 == 11 and minutes_leftto_date1 < 60 and minutes_leftto_date1 > 0:
-        
-        DOGMATICA_SCENE.START(date_leftto_date1_print,time_leftto_date1_print,0)
-
+        import DOGMATICA_SCENE
+        try:
+            DOGMATICA_SCENE.START(date_leftto_date1_print,time_leftto_date1_print,0)
+        except:
+            DOGMATICA_SCENE.error_funnies()
     
     time.sleep(1)
