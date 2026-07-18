@@ -2,6 +2,8 @@
 
 #im NOT proud of the code but AM proud of the final product
 
+#the deeper you go in the code the more cursed it gets so i suggest you to just enjoy the show that this program is
+
 import os
 import time
 
@@ -18,59 +20,59 @@ DOGMATICAlyricnum = 0
 
 DOGMATICArenderednum = -1
 
-BE_AMCSLASH = ["    \n",                     #0
-               "    \n",                     #1
-               "    \n",                     #2
-               "    .s5SSSs.  .s5SSSs.  \n", #3
-               "          SS.       SS. \n", #4
-               "    sS    S%S sS    `:; \n", #5
-               "    SS    S%S SS        \n", #6
-               "    SS .sSSS  SSSs.     \n", #7
-               "    SS    S%S SS        \n", #8
-               "    SS    `:; SS        \n", #9
-               "    SS    ;,. SS    ;,. \n", #10
-               "    `:;;;;;:' `:;;;;;:' \n", #11
-               "    \n",                     #12
-               "    \n",                     #13
-               "    \n",]                    #14
+BE_AMCSLASH = [" \n",                     #0
+               " \n",                     #1
+               " \n",                     #2
+               " .s5SSSs.  .s5SSSs.  \n", #3
+               "       SS.       SS. \n", #4
+               " sS    S%S sS    `:; \n", #5
+               " SS    S%S SS        \n", #6
+               " SS .sSSS  SSSs.     \n", #7
+               " SS    S%S SS        \n", #8
+               " SS    `:; SS        \n", #9
+               " SS    ;,. SS    ;,. \n", #10
+               " `:;;;;;:' `:;;;;;:' \n", #11
+               " \n",                     #12
+               " \n",                     #13
+               " \n",]                    #14
 BE_AMCSLASH_str = ''
 for i in BE_AMCSLASH:
     BE_AMCSLASH_str+=i
 
 
-BE_AMCAAA01 = ["     .S_SSSs      sSSs  \n", #0
-               "    .SS~SSSSS    d%%SP  \n", #1
-               "    S%S   SSSS  d%S'    \n", #2
-               "    S%S    S%S  S%S     \n", #3
-               "    S%S SSSS%P  S&S     \n", #4
-               "    S&S  SSSY   S&S_Ss  \n", #5
-               "    S&S    S&S  S&S~SP  \n", #6
-               "    S&S    S&S  S&S~SP  \n", #7
-               "    S&S    S&S  S&S     \n", #8
-               "    S*S    S&S  S*b     \n", #9
-               "    S*S    S*S  S*S.    \n", #10
-               "    S*S SSSSP    SSSbs  \n", #11
-               "    S*S  SSY      YSSP  \n", #12
-               "    SP                  \n", #13
-               "    Y                   \n",]#14
+BE_AMCAAA01 = ["   .S_SSSs      sSSs  \n", #0
+               " .SS~SSSSS    d%%SP  \n", #1
+               " S%S   SSSS  d%S'    \n", #2
+               " S%S    S%S  S%S     \n", #3
+               " S%S SSSS%P  S&S     \n", #4
+               " S&S  SSSY   S&S_Ss  \n", #5
+               " S&S    S&S  S&S~SP  \n", #6
+               " S&S    S&S  S&S~SP  \n", #7
+               " S&S    S&S  S&S     \n", #8
+               " S*S    S&S  S*b     \n", #9
+               " S*S    S*S  S*S.    \n", #10
+               " S*S SSSSP    SSSbs  \n", #11
+               " S*S  SSY      YSSP  \n", #12
+               " SP                  \n", #13
+               " Y                   \n",]#14
 BE_AMCAAA01_str = ''
 for i in BE_AMCAAA01:
     BE_AMCAAA01_str+=i
 
-KEEP_AMCAAA01 = ["     .S    S.     sSSs    sSSs   .S_sSSs    \n", #0                 
-                 "    .SS    SS.   d%%SP   d%%SP  .SS~YS%%b   \n", #1
-                 "    S%S    S&S  d%S'    d%S'    S%S   `S%b  \n", #2
-                 "    S%S    d*S  S%S     S%S     S%S    S%S  \n", #3
-                 "    S&S   .S*S  S&S     S&S     S%S    d*S  \n", #4
-                 "    S&S_sdSSS   S&S_Ss  S&S_Ss  S&S   .S*S  \n", #5
-                 "    S&S~YSSY%b  S&S~SP  S&S~SP  S&S_sdSSS   \n", #6
-                 "    S&S    `S%  S&S     S&S     S&S~YSSY    \n", #7
-                 "    S*S     S%  S*b     S*b     S*S         \n", #8
-                 "    S*S     S&  S*S.    S*S.    S*S         \n", #9
-                 "    S*S     S&   SSSbs   SSSbs  S*S         \n", #10
-                 "    S*S     SS    YSSP    YSSP  S*S         \n", #11
-                 "    SP                          SP          \n", #12
-                 "    Y                           Y           \n",]#13
+KEEP_AMCAAA01 = ["  .S    S.     sSSs    sSSs   .S_sSSs    \n", #0                 
+                 " .SS    SS.   d%%SP   d%%SP  .SS~YS%%b   \n", #1
+                 " S%S    S&S  d%S'    d%S'    S%S   `S%b  \n", #2
+                 " S%S    d*S  S%S     S%S     S%S    S%S  \n", #3
+                 " S&S   .S*S  S&S     S&S     S%S    d*S  \n", #4
+                 " S&S_sdSSS   S&S_Ss  S&S_Ss  S&S   .S*S  \n", #5
+                 " S&S~YSSY%b  S&S~SP  S&S~SP  S&S_sdSSS   \n", #6
+                 " S&S    `S%  S&S     S&S     S&S~YSSY    \n", #7
+                 " S*S     S%  S*b     S*b     S*S         \n", #8
+                 " S*S     S&  S*S.    S*S.    S*S         \n", #9
+                 " S*S     S&   SSSbs   SSSbs  S*S         \n", #10
+                 " S*S     SS    YSSP    YSSP  S*S         \n", #11
+                 " SP                          SP          \n", #12
+                 " Y                           Y           \n",]#13
 KEEP_AMCAAA01_str = ''
 for i in KEEP_AMCAAA01:
     KEEP_AMCAAA01_str+=i
@@ -730,7 +732,40 @@ A_THIS = [
 
 
 
+BEAUTIFUL_BLOODY = [
+        "▄▄▄▄   ▓█████ ▄▄▄       █    ██ ▄▄▄█████▓ ██▓  █████▒█    ██  ██▓     ", #0
+        "▓█████▄ ▓█   ▀▒████▄     ██  ▓██▒▓  ██▒ ▓▒▓██▒▓██   ▒ ██  ▓██▒▓██▒    ", #1
+        "▒██▒ ▄██▒███  ▒██  ▀█▄  ▓██  ▒██░▒ ▓██░ ▒░▒██▒▒████ ░▓██  ▒██░▒██░    ", #2
+        "▒██░█▀  ▒▓█  ▄░██▄▄▄▄██ ▓▓█  ░██░░ ▓██▓ ░ ░██░░▓█▒  ░▓▓█  ░██░▒██░    ", #3
+        "░▓█  ▀█▓░▒████▒▓█   ▓██▒▒▒█████▓   ▒██▒ ░ ░██░░▒█░   ▒▒█████▓ ░██████▒", #4
+        "░▒▓███▀▒░░ ▒░ ░▒▒   ▓▒█░░▒▓▒ ▒ ▒   ▒ ░░   ░▓   ▒ ░   ░▒▓▒ ▒ ▒ ░ ▒░▓  ░", #5
+        "▒░▒   ░  ░ ░  ░ ▒   ▒▒ ░░░▒░ ░ ░     ░     ▒ ░ ░     ░░▒░ ░ ░ ░ ░ ▒  ░", #6
+        "░    ░    ░    ░   ▒    ░░░ ░ ░   ░       ▒ ░ ░ ░    ░░░ ░ ░   ░ ░    ", #7
+        "░         ░  ░     ░  ░   ░               ░            ░         ░  ░ ", #8
+        "     ░                                                                ", #9
 
+]
+
+
+
+DOGMATICA_BLOODY = [
+        '▓█████▄  ▒█████    ▄████  ███▄ ▄███▓ ▄▄▄     ▄▄▄█████▓ ██▓ ▄████▄   ▄▄▄      ', #0
+        '▒██▀ ██▌▒██▒  ██▒ ██▒ ▀█▒▓██▒▀█▀ ██▒▒████▄   ▓  ██▒ ▓▒▓██▒▒██▀ ▀█  ▒████▄    ', #1
+        '░██   █▌▒██░  ██▒▒██░▄▄▄░▓██    ▓██░▒██  ▀█▄ ▒ ▓██░ ▒░▒██▒▒▓█    ▄ ▒██  ▀█▄  ', #2
+        '░▓█▄   ▌▒██   ██░░▓█  ██▓▒██    ▒██ ░██▄▄▄▄██░ ▓██▓ ░ ░██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ', #3
+        '░▒████▓ ░ ████▓▒░░▒▓███▀▒▒██▒   ░██▒ ▓█   ▓██▒ ▒██▒ ░ ░██░▒ ▓███▀ ░ ▓█   ▓██▒', #4
+        '▒▒▓  ▒ ░ ▒░▒░▒░  ░▒   ▒ ░ ▒░   ░  ░ ▒▒   ▓▒█░ ▒ ░░   ░▓  ░ ░▒ ▒  ░ ▒▒   ▓▒█░ ', #5
+        '░ ▒  ▒   ░ ▒ ▒░   ░   ░ ░  ░      ░  ▒   ▒▒ ░   ░     ▒ ░  ░  ▒     ▒   ▒▒ ░ ', #6
+        '░ ░  ░ ░ ░ ░ ▒  ░ ░   ░ ░      ░     ░   ▒    ░       ▒ ░░          ░   ▒    ', #7
+        '░        ░ ░        ░        ░         ░  ░         ░  ░ ░            ░  ░   ', #8
+        '░                                                        ░                   ', #9
+
+
+
+
+
+
+]
 
 
 
@@ -1133,7 +1168,6 @@ dogmaticalyric_nums = {
     609: 'bleahhhx2',
     610: 'bleahhhx3',
     611: 'bleahhhx4',
-
     612: 'bleahhhx5',
     613: 'bleahhhx6',
     614: 'bleahhhx7',
@@ -1143,7 +1177,6 @@ dogmaticalyric_nums = {
     643: 'bleahhh x2',
     644: 'bleahhh x3',
     645: 'bleahhh x4',
-
     646: 'bleahhh x5',
     647: 'bleahhh x6',
     648: 'bleahhh x7',
@@ -1153,30 +1186,73 @@ dogmaticalyric_nums = {
     676: 'bleahhh  x2',
     677: 'bleahhh  x3',
     678: 'bleahhh  x4',
-
     679: 'bleahhh  x5',
     680: 'bleahhh  x6',
     681: 'bleahhh  x7',
     682: 'bleahhh  x8',
 
-    689: 'Trans-',
-    692: 'Transfor-',
-    693: 'Transforma-',
-    694: 'Transformation',
+    689: 'Transformation',
+    696: 'Complete',
+
+    701: 'Transformation x2',
+    708: 'Complete x2',
+
+
+
+    723: 'You',
+
+    724: 'You are',
+
+    726: 'You are now',
+
+    729: 'You are now as',
+
+    731: 'You are now as you',
+    732: 'You are now as you once',
+
+    734: 'You are now as you once were',
+
+    741: 'Beautiful',
+
+
+
+
+
+
+    755: 'Transformation',
+    762: 'Complete',
+
+    767: 'Transformation x2',
+    774: 'Complete x2',
+
+
+
+    782: 'You',
+
+    783: 'You are',
+
+    784: 'You are now',
+
+    787: 'You are now as',
+
+    789: 'You are now as you',
+    790: 'You are now as you once',
+
+    792: 'You are now as you once were',
+
+    799: 'Beautiful',
+
+
+    812: 'You',
+    813: 'You are',
+
+
+
+    818: 'DOGMATICA',
+
 
     }
 
-asd = {
-
-
-
-
-
-
-
-   
-
-    
     #Transformation complete You are now, as you once were. Beautiful. You are Dogmatica
     
 #   _____ _    _ _    _ _______ 
@@ -1321,7 +1397,7 @@ asd = {
 
 
 
-}
+
 
 
 
@@ -1363,7 +1439,7 @@ pygame.font.init()
 
 desktopres = pygame.display.get_desktop_sizes()[0]
 standardres = (1920,1080)
-desktopscale = (standardres[0]/desktopres[0],standardres[1]/desktopres[1])
+desktopscale = (desktopres[0]/standardres[0],desktopres[1]/standardres[1])
 
 windowmain = pygame.Window('windowmain',desktopres,(0,0),
                             borderless=True,
@@ -1396,9 +1472,13 @@ windowmain.title = ' '
 pawsurface = pygame.transform.scale(pygame.image.load(files['paw']),(desktopres[1],desktopres[1]))
 pawmirrorsurface = pygame.transform.scale(pygame.image.load(files['pawmirror']),(desktopres[1],desktopres[1]))
 facebasesurface = pygame.image.load(files['facebase'])
+facebasesurface = pygame.transform.scale(facebasesurface,(256*desktopscale[0],256*desktopscale[0]))
 faceeyesdetailsurface = pygame.image.load(files['faceeyesdetail'])
+faceeyesdetailsurface = pygame.transform.scale(faceeyesdetailsurface,(256*desktopscale[0],256*desktopscale[0]))
 facemouthclosedsurface = pygame.image.load(files['facemouthclosed'])
+facemouthclosedsurface = pygame.transform.scale(facemouthclosedsurface,(256*desktopscale[0],256*desktopscale[0]))
 facemouthopenedsurface = pygame.image.load(files['facemouthopened'])
+facemouthopenedsurface = pygame.transform.scale(facemouthopenedsurface,(256*desktopscale[0],256*desktopscale[0]))
 
 
 
@@ -1568,10 +1648,10 @@ facemouthclosedsurface_scales_prerender = []
 facemouthopenedsurface_scales_prerender = []
 num = 10
 while num <= 30:
-    facebasesurface_scales_prerender.append(pygame.transform.scale(facebasesurface,(256*(num/10),256*(num/10))))
-    faceeyesdetailsurface_scales_prerender.append(pygame.transform.scale(faceeyesdetailsurface,(256*(num/10),256*(num/10))))
-    facemouthclosedsurface_scales_prerender.append(pygame.transform.scale(facemouthclosedsurface,(256*(num/10),256*(num/10))))
-    facemouthopenedsurface_scales_prerender.append(pygame.transform.scale(facemouthopenedsurface,(256*(num/10),256*(num/10))))
+    facebasesurface_scales_prerender.append(pygame.transform.scale(facebasesurface,((256*desktopscale[0])*(num/10),(256*desktopscale[0])*(num/10))))
+    faceeyesdetailsurface_scales_prerender.append(pygame.transform.scale(faceeyesdetailsurface,((256*desktopscale[0])*(num/10),(256*desktopscale[0])*(num/10))))
+    facemouthclosedsurface_scales_prerender.append(pygame.transform.scale(facemouthclosedsurface,((256*desktopscale[0])*(num/10),(256*desktopscale[0])*(num/10))))
+    facemouthopenedsurface_scales_prerender.append(pygame.transform.scale(facemouthopenedsurface,((256*desktopscale[0])*(num/10),(256*desktopscale[0])*(num/10))))
 
     num += 1
 
@@ -1586,6 +1666,7 @@ def fourthwallbreak(Startingtime):
     global windowcurrent
 
     windows_list[windowcurrent].show()
+    windows_list[windowcurrent].always_on_top = True
     windows_list[windowcurrent].set_icon(icon)
     
     global facebasesurface
@@ -1709,11 +1790,11 @@ def fourthwallbreak(Startingtime):
             
             if animtimems in range(2560,3840): # transition
                 num = 0
-                while num < 30:
+                while num < int(30*desktopscale[0]):
                     x = random.randint(0,desktopres[0])
                     y = random.randint(0,desktopres[1])
-                    pygame.draw.line(windowmainsurface,(0,0,0),(x-200,y),
-                                                       (x+200,y),3)
+                    pygame.draw.line(windowmainsurface,(0,0,0),(x-int(200*desktopscale[0]),y),
+                                                       (x+int(200*desktopscale[0]),y),3)
                     num += 1
 
             
@@ -1755,11 +1836,11 @@ def fadein1600ms(Startingtime):
         
         if animtimems in range(0,640):
             num = 0
-            while num < 10:
+            while num < int(10*desktopscale[0]):
                 x = random.randint(0,desktopres[0])
                 y = random.randint(0,desktopres[1])
-                pygame.draw.line(windowsurfaces_list[windowcurrent],(0,255,0),(x,y-100),
-                                                                              (x,y+100),1)
+                pygame.draw.line(windowsurfaces_list[windowcurrent],(0,255,0),(x,y-int(100*desktopscale[0])),
+                                                                              (x,y+int(100*desktopscale[0])),1)
                 num += 1
 
                 
@@ -1768,10 +1849,10 @@ def fadein1600ms(Startingtime):
             windowscale = abs((animtimems-1600)/960)
 
             #500x250 new window
-            x = desktopres[0]-500
-            y = desktopres[1]-250
+            x = desktopres[0]-int(500*desktopscale[0])
+            y = desktopres[1]-int(250*desktopscale[0])
 
-            windowres = [int(500+(x*windowscale)),int(250+(y*windowscale))]
+            windowres = [int((500*desktopscale[0])+(x*windowscale)),int((250*desktopscale[0])+(y*windowscale))]
 
             lastsurface = pygame.transform.scale(windowmainsurface,(windowres[0],windowres[1]))
 
@@ -1820,7 +1901,7 @@ def fadein1600ms(Startingtime):
 
 
         if nuhuhtime+1.6 > time.perf_counter():
-            nuhuh = fonts_unifont(100).render('No :3',False,(0,0,0))
+            nuhuh = fonts_unifont(int(100*desktopscale[0])).render('No :3',False,(0,0,0))
             windowsurfaces_list[windowcurrent].blit(nuhuh,((windows_list[windowcurrent].size[0]//2)-(nuhuh.get_width() //2),
                                                            (windows_list[windowcurrent].size[1]//2)-(nuhuh.get_height()//2)))
             
@@ -1865,8 +1946,8 @@ def windowtextanim(Startingtime):
         secondparttime = animtimems-5400
         thirdparttime = animtimems-10400
 
-        x = (desktopres[0]//2)-(windows_list[windowcurrent].size[0]//2)-((windowmovingmult[0]*mult_of_a_windowmovingmult)*((desktopres[0]//2)-(windows_list[windowcurrent].size[0]//2)))+(random.randint(-50,50)*shakeintensity)
-        y = (desktopres[1]//2)-(windows_list[windowcurrent].size[1]//2)-((windowmovingmult[1]*mult_of_a_windowmovingmult)*((desktopres[1]//2)-(windows_list[windowcurrent].size[1]//2)))+(random.randint(-50,50)*shakeintensity)
+        x = (desktopres[0]//2)-(windows_list[windowcurrent].size[0]//2)-((windowmovingmult[0]*mult_of_a_windowmovingmult)*((desktopres[0]//2)-(windows_list[windowcurrent].size[0]//2)))+(random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))*shakeintensity)
+        y = (desktopres[1]//2)-(windows_list[windowcurrent].size[1]//2)-((windowmovingmult[1]*mult_of_a_windowmovingmult)*((desktopres[1]//2)-(windows_list[windowcurrent].size[1]//2)))+(random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))*shakeintensity)
         windows_list[windowcurrent].position = (x,y)
 
         if windowcycle:
@@ -1920,10 +2001,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-480)/320)
 
             if (firstparttime-160) in range(0,10):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'THINK',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-160) in range(80,90):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1933,10 +2014,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-800)/320)
 
             if (firstparttime-480) in range(0,10):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-480) in range(80,90):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1947,10 +2028,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-1120)/320)
 
             if (firstparttime-800) in range(0,10):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'THINK',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-800) in range(80,90):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1959,10 +2040,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-1440)/320)
 
             if (firstparttime-1120) in range(0,10):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-1120) in range(80,90):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1973,10 +2054,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-1780)/320)
 
             if (firstparttime-1460) in range(0,10):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'THINK',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-1460) in range(80,90):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1985,10 +2066,10 @@ def windowtextanim(Startingtime):
             shakeintensity = abs((firstparttime-2100)/320)
 
             if (firstparttime-1780) in range(0,10):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-1780) in range(80,90):
-                text = fonts_faith_collapsing(200).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TWICE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -1998,10 +2079,10 @@ def windowtextanim(Startingtime):
         if firstparttime in range(2100,2420): #THINK TW- x4
             shakeintensity = abs((firstparttime-2420)/320)
             if (firstparttime-2100) in range(0,10):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'THINK',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-2100) in range(80,90):
-                text = fonts_faith_collapsing(200).render('THINK',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('THINK',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2016,17 +2097,17 @@ def windowtextanim(Startingtime):
                 windows_list[0].hide()
                 windowcycle = True
                 windowcycletimemult = 2
-                mult_of_a_windowmovingmult = 1.5
+                mult_of_a_windowmovingmult = 1.5*desktopscale[0]
             else:
                 windowcycle = False
 
             if (firstparttime-2440) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-2440) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2041,11 +2122,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-2600) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-2600) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2060,11 +2141,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-2760) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-2760) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2079,11 +2160,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-2940) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-2940) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2098,11 +2179,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-3100) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-3100) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2117,11 +2198,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-3260) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-3260) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2136,11 +2217,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-3420) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-3420) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2155,11 +2236,11 @@ def windowtextanim(Startingtime):
 
             if (firstparttime-3580) in range(0,10):
                 windows_list[windowcurrent].show()
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (firstparttime-3580) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
@@ -2179,7 +2260,7 @@ def windowtextanim(Startingtime):
 
             windowcurrent = 0
             windows_list[0].show()
-            text = fonts_faith_collapsing(150).render('TWICE',False,(255,255,255))
+            text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TWICE',False,(255,255,255))
             text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
             windowtextanim_windowsetmode(text,'TWICE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
 
@@ -2216,10 +2297,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(0,160): #I-
             shakeintensity = abs((secondparttime-160)/160) / 4
             if (secondparttime) in range(0,10):
-                text = fonts_ithorn(200).render('I-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'I-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime) in range(80,90):
-                text = fonts_ithorn(200).render('I-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2228,10 +2309,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(160,320): #I
             shakeintensity = abs((secondparttime-320)/160) / 4
             if (secondparttime-160) in range(0,10):
-                text = fonts_ithorn(200).render('I',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'I',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-160) in range(80,90):
-                text = fonts_ithorn(200).render('I',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2240,10 +2321,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(320,480): #WILL
             shakeintensity = abs((secondparttime-480)/160) / 4
             if (secondparttime-320) in range(0,10):
-                text = fonts_ithorn(200).render('WILL',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WILL',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'WILL',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-320) in range(80,90):
-                text = fonts_ithorn(200).render('WILL',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WILL',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2252,10 +2333,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(480,640): #BE
             shakeintensity = abs((secondparttime-640)/160) / 4
             if (secondparttime-480) in range(0,10):
-                text = fonts_ithorn(200).render('BE',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'BE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-480) in range(80,90):
-                text = fonts_ithorn(200).render('BE',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2264,10 +2345,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(640,800): #IN
             shakeintensity = abs((secondparttime-800)/160) / 4
             if (secondparttime-640) in range(0,10):
-                text = fonts_ithorn(200).render('IN',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('IN',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'IN',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-640) in range(80,90):
-                text = fonts_ithorn(200).render('IN',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('IN',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2276,10 +2357,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(800,960): #LOVE
             shakeintensity = abs((secondparttime-960)/160) / 4
             if (secondparttime-800) in range(0,10):
-                text = fonts_ithorn(200).render('LOVE',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('LOVE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'LOVE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-800) in range(80,90):
-                text = fonts_ithorn(200).render('LOVE',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('LOVE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2288,10 +2369,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(960,1120): #FOR-
             shakeintensity = abs((secondparttime-1120)/160) / 4
             if (secondparttime-960) in range(0,10):
-                text = fonts_ithorn(200).render('FOR-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FOR-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FOR-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-960) in range(80,90):
-                text = fonts_ithorn(200).render('FOR-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FOR-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2300,10 +2381,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1120,1280): #FORE-
             shakeintensity = abs((secondparttime-1280)/160) / 4
             if (secondparttime-1120) in range(0,10):
-                text = fonts_ithorn(200).render('FORE-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FORE-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FORE-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1120) in range(80,90):
-                text = fonts_ithorn(200).render('FORE-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FORE-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2312,10 +2393,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1280,1440): #FOREVER
             shakeintensity = abs((secondparttime-1440)/160) / 4
             if (secondparttime-1280) in range(0,10):
-                text = fonts_ithorn(200).render('FOREVER',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FOREVER',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FOREVER',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1280) in range(80,90):
-                text = fonts_ithorn(200).render('FOREVER',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FOREVER',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2324,10 +2405,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1440,1600): #CUZ
             shakeintensity = abs((secondparttime-1600)/160) / 4
             if (secondparttime-1440) in range(0,10):
-                text = fonts_ithorn(200).render('CUZ',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('CUZ',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'CUZ',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1440) in range(80,90):
-                text = fonts_ithorn(200).render('CUZ',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('CUZ',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2336,10 +2417,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1600,1760): #I'M
             shakeintensity = abs((secondparttime-1760)/160) / 4
             if (secondparttime-1600) in range(0,10):
-                text = fonts_ithorn(200).render("I'M",False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render("I'M",False,(255,0,0))
                 windowtextanim_windowsetmode(text,"I'M",windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1600) in range(80,90):
-                text = fonts_ithorn(200).render("I'M",False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render("I'M",False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2348,10 +2429,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1760,1920): #GON-
             shakeintensity = abs((secondparttime-1920)/160) / 4
             if (secondparttime-1760) in range(0,10):
-                text = fonts_ithorn(200).render('GON-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GON-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'GON-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1760) in range(80,90):
-                text = fonts_ithorn(200).render('GON-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GON-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2360,10 +2441,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(1920,2080): #GONNA
             shakeintensity = abs((secondparttime-2080)/160) / 4
             if (secondparttime-1920) in range(0,10):
-                text = fonts_ithorn(200).render('GONNA',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GONNA',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'GONNA',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-1920) in range(80,90):
-                text = fonts_ithorn(200).render('GONNA',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GONNA',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2372,10 +2453,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(2080,2240): #DIE
             shakeintensity = abs((secondparttime-2240)/160) / 4
             if (secondparttime-2080) in range(0,10):
-                text = fonts_ithorn(200).render('DIE',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('DIE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'DIE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-2080) in range(80,90):
-                text = fonts_ithorn(200).render('DIE',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('DIE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2384,10 +2465,10 @@ def windowtextanim(Startingtime):
         if secondparttime in range(2240,2400): #TO-
             shakeintensity = abs((secondparttime-2400)/160) / 4
             if (secondparttime-2240) in range(0,10):
-                text = fonts_faith_collapsing(150).render('TO-',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TO-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'TO-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (secondparttime-2240) in range(80,90):
-                text = fonts_faith_collapsing(150).render('TO-',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('TO-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2405,7 +2486,7 @@ def windowtextanim(Startingtime):
                 windowmovingmult[1] -= 0.005
             shakeintensity = abs((secondparttime-2560)/160) * 2
             if (secondparttime-2400) in range(0,10):
-                text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,0,0))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'TONIGHT',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
                 windows_list[1].hide()
                 windows_list[2].hide()
@@ -2428,7 +2509,7 @@ def windowtextanim(Startingtime):
                                        windows_list[3].position,
                                        windows_list[4].position]
             if (secondparttime-2400) in range(80,90):
-                text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,255,255))
+                text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2446,28 +2527,28 @@ def windowtextanim(Startingtime):
             
         if secondparttime in range(4480,4490): #TONIGHT x2
             windows_list[1].show()
-            text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,255,255))
+            text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,255,255))
             windowsurfaces_list[1].fill((0,255,0))
             windowsurfaces_list[1].blit(text)
             pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
             windows_list[1].flip()
         if secondparttime in range(4640,4650): #TONIGHT x3
             windows_list[2].show()
-            text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,255,255))
+            text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,255,255))
             windowsurfaces_list[2].fill((0,255,0))
             windowsurfaces_list[2].blit(text)
             pygame.draw.lines(windowsurfaces_list[2],(128,128,128),False,[(0,0),(windows_list[2].size[0]-1,0),(windows_list[2].size[0]-1,windows_list[2].size[1]-1),(0,windows_list[2].size[1]-1),(0,0)])
             windows_list[2].flip()
         if secondparttime in range(4800,4810): #TONIGHT x4
             windows_list[3].show()
-            text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,255,255))
+            text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,255,255))
             windowsurfaces_list[3].fill((0,255,0))
             windowsurfaces_list[3].blit(text)
             pygame.draw.lines(windowsurfaces_list[3],(128,128,128),False,[(0,0),(windows_list[3].size[0]-1,0),(windows_list[3].size[0]-1,windows_list[3].size[1]-1),(0,windows_list[3].size[1]-1),(0,0)])
             windows_list[3].flip()
         if secondparttime in range(4960,4970): #TONIGHT x5
             windows_list[4].show()
-            text = fonts_faith_collapsing(200).render('TONIGHT',False,(255,255,255))
+            text = fonts_faith_collapsing(int(200*desktopscale[0])).render('TONIGHT',False,(255,255,255))
             windowsurfaces_list[4].fill((0,255,0))
             windowsurfaces_list[4].blit(text)
             pygame.draw.lines(windowsurfaces_list[4],(128,128,128),False,[(0,0),(windows_list[4].size[0]-1,0),(windows_list[4].size[0]-1,windows_list[4].size[1]-1),(0,windows_list[4].size[1]-1),(0,0)])
@@ -2506,25 +2587,25 @@ def windowtextanim(Startingtime):
 
         if thirdparttime in range(480,2720):
             if thirdparttime % 16 == 0:
-                randomx = random.randint(-10,10)
-                randomy = random.randint(-10,10)
-                windows_list[7].position = (50+randomx, 
-                                            50+randomy) #so
+                randomx = random.randint(int(-10*desktopscale[0]),int(10*desktopscale[0]))
+                randomy = random.randint(int(-10*desktopscale[0]),int(10*desktopscale[0]))
+                windows_list[7].position = (int(50*desktopscale[0])+randomx, 
+                                            int(50*desktopscale[0])+randomy) #so
                 
-                windows_list[6].position = (50+randomx,
+                windows_list[6].position = (int(50*desktopscale[0])+randomx,
                                             (desktopres[1]//2)-(windows_list[6].size[1]//2)+randomy) #please
-                windows_list[5].position = (50+randomx,
-                                            desktopres[1]-windows_list[5].size[1]-50+randomy) #just
+                windows_list[5].position = (int(50*desktopscale[0])+randomx,
+                                            desktopres[1]-windows_list[5].size[1]-int(50*desktopscale[0])+randomy) #just
                 
-                windows_list[4].position = ((desktopres[0]-50-windows_list[4].size[0])+randomx,
-                                            50+randomy) #hold
-                windows_list[3].position = ((desktopres[0]-50-windows_list[3].size[0])+randomx,
-                                            desktopres[1]-windows_list[3].size[1]-50+randomy) #me
+                windows_list[4].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[4].size[0])+randomx,
+                                            int(50*desktopscale[0])+randomy) #hold
+                windows_list[3].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[3].size[0])+randomx,
+                                            desktopres[1]-windows_list[3].size[1]-int(50*desktopscale[0])+randomy) #me
                 
                 windows_list[2].position = ((desktopres[0]//2)-(windows_list[2].size[0]//2)+randomx,
-                                            50+randomy) #one
+                                            int(50*desktopscale[0])+randomy) #one
                 windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2)+randomx,
-                                            (desktopres[1]-50-windows_list[1].size[1])+randomy) #last
+                                            (desktopres[1]-int(50*desktopscale[0])-windows_list[1].size[1])+randomy) #last
 
 
 
@@ -2532,105 +2613,105 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(480,800): #SO
             if (thirdparttime-480) in range(0,10):
                 windows_list[7].show()
-                text = fonts_faith_collapsing(150).render('SO',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('SO',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*2,text.get_height()))
                 windowtextanim_windowsetmode(text,'SO',windows_list[7],windowsurfaces_list[7])
             if (thirdparttime-480) in range(40,50):
-                text = fonts_faith_collapsing(150).render('SO',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('SO',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'SO',windows_list[7],windowsurfaces_list[7])
             if (thirdparttime-480) in range(80,90):
-                text = fonts_faith_collapsing(150).render('SO',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('SO',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*2))
                 windowtextanim_windowsetmode(text,'SO',windows_list[7],windowsurfaces_list[7])
 
         if thirdparttime in range(800,1120): #PLEASE
             if (thirdparttime-800) in range(0,10):
                 windows_list[6].show()
-                text = fonts_faith_collapsing(150).render('PLEASE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('PLEASE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()//2,text.get_height()))
                 windowtextanim_windowsetmode(text,'PLEASE',windows_list[6],windowsurfaces_list[6])
             if (thirdparttime-800) in range(40,50):
-                text = fonts_faith_collapsing(150).render('PLEASE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('PLEASE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'PLEASE',windows_list[6],windowsurfaces_list[6])
             if (thirdparttime-800) in range(80,90):
-                text = fonts_faith_collapsing(150).render('PLEASE',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('PLEASE',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()//2))
                 windowtextanim_windowsetmode(text,'PLEASE',windows_list[6],windowsurfaces_list[6])
 
         if thirdparttime in range(1120,1440): #JUST
             if (thirdparttime-1120) in range(0,10):
                 windows_list[5].show()
-                text = fonts_faith_collapsing(150).render('JUST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('JUST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*2,text.get_height()))
                 windowtextanim_windowsetmode(text,'JUST',windows_list[5],windowsurfaces_list[5])
             if (thirdparttime-1120) in range(40,50):
-                text = fonts_faith_collapsing(150).render('JUST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('JUST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'JUST',windows_list[5],windowsurfaces_list[5])
             if (thirdparttime-1120) in range(80,90):
-                text = fonts_faith_collapsing(150).render('JUST',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('JUST',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'JUST',windows_list[5],windowsurfaces_list[5])
         
         if thirdparttime in range(1440,1760): #HOLD
             if (thirdparttime-1440) in range(0,10):
                 windows_list[4].show()
-                text = fonts_faith_collapsing(150).render('HOLD',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('HOLD',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()//2,text.get_height()))
                 windowtextanim_windowsetmode(text,'HOLD',windows_list[4],windowsurfaces_list[4])
             if (thirdparttime-1440) in range(40,50):
-                text = fonts_faith_collapsing(150).render('HOLD',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('HOLD',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'HOLD',windows_list[4],windowsurfaces_list[4])
             if (thirdparttime-1440) in range(80,90):
-                text = fonts_faith_collapsing(150).render('HOLD',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('HOLD',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'HOLD',windows_list[4],windowsurfaces_list[4])
         
         if thirdparttime in range(1760,2080): #ME
             if (thirdparttime-1760) in range(0,10):
                 windows_list[3].show()
-                text = fonts_faith_collapsing(150).render('ME',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ME',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*2))
                 windowtextanim_windowsetmode(text,'ME',windows_list[3],windowsurfaces_list[3])
             if (thirdparttime-1760) in range(40,50):
-                text = fonts_faith_collapsing(150).render('ME',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ME',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'ME',windows_list[3],windowsurfaces_list[3])
             if (thirdparttime-1760) in range(80,90):
-                text = fonts_faith_collapsing(150).render('ME',False,(255,255,255))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ME',False,(255,255,255))
                 text = pygame.transform.scale(text,(text.get_width()*2,text.get_height()))
                 windowtextanim_windowsetmode(text,'ME',windows_list[3],windowsurfaces_list[3])
         
         if thirdparttime in range(2080,2400): #ONE
             if (thirdparttime-2080) in range(0,10):
                 windows_list[2].show()
-                text = fonts_faith_collapsing(150).render('ONE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ONE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*3,text.get_height()))
                 windowtextanim_windowsetmode(text,'ONE',windows_list[2],windowsurfaces_list[2])
             if (thirdparttime-2080) in range(40,50):
-                text = fonts_faith_collapsing(150).render('ONE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ONE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'ONE',windows_list[2],windowsurfaces_list[2])
             if (thirdparttime-2080) in range(80,90):
-                text = fonts_faith_collapsing(150).render('ONE',False,(255,200,200))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ONE',False,(255,200,200))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'ONE',windows_list[2],windowsurfaces_list[2])
         
         if thirdparttime in range(2400,2720): #LAST
             if (thirdparttime-2400) in range(0,10):
                 windows_list[1].show()
-                text = fonts_faith_collapsing(150).render('LAST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('LAST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*3,text.get_height()))
                 windowtextanim_windowsetmode(text,'LAST',windows_list[1],windowsurfaces_list[1])
             if (thirdparttime-2400) in range(40,50):
-                text = fonts_faith_collapsing(150).render('LAST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('LAST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'LAST',windows_list[1],windowsurfaces_list[1])
             if (thirdparttime-2400) in range(80,90):
-                text = fonts_faith_collapsing(150).render('LAST',False,(255,200,200))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('LAST',False,(255,200,200))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*3))
                 windowtextanim_windowsetmode(text,'LAST',windows_list[1],windowsurfaces_list[1])
         
@@ -2639,26 +2720,26 @@ def windowtextanim(Startingtime):
 
         if thirdparttime in range(2720,4960):
             if thirdparttime-2720 in range(0,10):
-                textbleh = fonts_faith_collapsing(150).render('TIME',False,(255,0,0))
-                text1 = fonts_faith_collapsing(150).render('TIME',False,(255,255,255))
-                text2 = fonts_faith_collapsing(150).render('TIME',False,(255,0,0))
-                text3 = fonts_faith_collapsing(150).render('TIME',False,(255,255,255))
-                text4 = fonts_faith_collapsing(150).render('TIME',False,(255,0,0))
-                text5 = fonts_faith_collapsing(150).render('TIME',False,(255,255,255))
-                text6 = fonts_faith_collapsing(150).render('TIME',False,(255,0,0))
-                text7 = fonts_faith_collapsing(150).render('TIME',False,(255,255,255))
+                textbleh = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,0,0))
+                text1 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,255,255))
+                text2 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,0,0))
+                text3 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,255,255))
+                text4 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,0,0))
+                text5 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,255,255))
+                text6 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,0,0))
+                text7 = fonts_faith_collapsing(int(150*desktopscale[0])).render('TIME',False,(255,255,255))
                 textwidth = textbleh.get_width()
                 textheight = textbleh.get_height()
-                textoutline = fonts_faith_collapsing(154).render('TIME',False,(0,0,0))
-            wholesurface = pygame.Surface((textwidth+200,textheight+200),pygame.SRCALPHA)
+                textoutline = fonts_faith_collapsing(int(150*desktopscale[0])+4).render('TIME',False,(0,0,0))
+            wholesurface = pygame.Surface((textwidth+int(200*desktopscale[0]),textheight+int(200*desktopscale[0])),pygame.SRCALPHA)
 
         if thirdparttime in range(2720,4000): #TIME X1
             if (thirdparttime-2720) in range(0,10):
-                text = fonts_faith_collapsing(150).render('SO',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('SO',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'SO',windows_list[7],windowsurfaces_list[7])
             if (thirdparttime-2720) in range(40,50):
-                text = fonts_faith_collapsing(150).render('SO',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('SO',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*2,text.get_height()))
                 windowtextanim_windowsetmode(text,'SO',windows_list[7],windowsurfaces_list[7])
             if (thirdparttime-2720) in range(80,90):
@@ -2671,17 +2752,17 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text1,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text1,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
             
         if thirdparttime in range(2880,4160): #TIME X2
 
             if (thirdparttime-2880) in range(0,10):
-                text = fonts_faith_collapsing(150).render('PLEASE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('PLEASE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'PLEASE',windows_list[6],windowsurfaces_list[6])
             if (thirdparttime-2880) in range(40,50):
-                text = fonts_faith_collapsing(150).render('PLEASE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('PLEASE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()//2,text.get_height()))
                 windowtextanim_windowsetmode(text,'PLEASE',windows_list[6],windowsurfaces_list[6])
             if (thirdparttime-2880) in range(80,90):
@@ -2694,16 +2775,16 @@ def windowtextanim(Startingtime):
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
             
-            texteffect = pygame.transform.scale(text2,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text2,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
 
         if thirdparttime in range(3040,4320): #TIME X3
             if (thirdparttime-3040) in range(0,10):
-                text = fonts_faith_collapsing(150).render('JUST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('JUST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'JUST',windows_list[5],windowsurfaces_list[5])
             if (thirdparttime-3040) in range(40,50):
-                text = fonts_faith_collapsing(150).render('JUST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('JUST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*2,text.get_height()))
                 windowtextanim_windowsetmode(text,'JUST',windows_list[5],windowsurfaces_list[5])
             if (thirdparttime-3040) in range(80,90):
@@ -2715,16 +2796,16 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text3,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text3,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
             
         if thirdparttime in range(3200,4480): #TIME X4
             if (thirdparttime-3200) in range(0,10):
-                text = fonts_faith_collapsing(150).render('HOLD',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('HOLD',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'HOLD',windows_list[4],windowsurfaces_list[4])
             if (thirdparttime-3200) in range(40,50):
-                text = fonts_faith_collapsing(150).render('HOLD',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('HOLD',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()//2,text.get_height()))
                 windowtextanim_windowsetmode(text,'HOLD',windows_list[4],windowsurfaces_list[4])
             if (thirdparttime-3200) in range(80,90):
@@ -2736,16 +2817,16 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text4,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text4,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
             
         if thirdparttime in range(3360,4640): #TIME X5
             if (thirdparttime-3360) in range(0,10):
-                text = fonts_faith_collapsing(150).render('ME',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ME',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'ME',windows_list[3],windowsurfaces_list[3])
             if (thirdparttime-3360) in range(40,50):
-                text = fonts_faith_collapsing(150).render('ME',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ME',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()*2))
                 windowtextanim_windowsetmode(text,'ME',windows_list[3],windowsurfaces_list[3])
             if (thirdparttime-3360) in range(80,90):
@@ -2757,16 +2838,16 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text5,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text5,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
             
         if thirdparttime in range(3520,4800): #TIME X6
             if (thirdparttime-3520) in range(0,10):
-                text = fonts_faith_collapsing(150).render('ONE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ONE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'ONE',windows_list[2],windowsurfaces_list[2])
             if (thirdparttime-3520) in range(40,50):
-                text = fonts_faith_collapsing(150).render('ONE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('ONE',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*3,text.get_height()))
                 windowtextanim_windowsetmode(text,'ONE',windows_list[2],windowsurfaces_list[2])
             if (thirdparttime-3520) in range(80,90):
@@ -2778,16 +2859,16 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text6,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text6,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
             
         if thirdparttime in range(3680,4960): #TIME X7
             if (thirdparttime-3680) in range(0,10):
-                text = fonts_faith_collapsing(150).render('LAST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('LAST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width(),text.get_height()))
                 windowtextanim_windowsetmode(text,'LAST',windows_list[1],windowsurfaces_list[1])
             if (thirdparttime-3680) in range(40,50):
-                text = fonts_faith_collapsing(150).render('LAST',False,(255,0,0))
+                text = fonts_faith_collapsing(int(150*desktopscale[0])).render('LAST',False,(255,0,0))
                 text = pygame.transform.scale(text,(text.get_width()*3,text.get_height()))
                 windowtextanim_windowsetmode(text,'LAST',windows_list[1],windowsurfaces_list[1])
             if (thirdparttime-3680) in range(80,90):
@@ -2799,12 +2880,12 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 1: #text popped out
                 timeeffect_scale = 1 + (1-timeeffect_scale)
                 timeeffect_scale = math.sqrt(timeeffect_scale)
-            texteffect = pygame.transform.scale(text7,(textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)))
-            wholesurface.blit(texteffect,(100-(100*timeeffect_scale),100-(100*timeeffect_scale)))
+            texteffect = pygame.transform.scale(text7,(textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)))
+            wholesurface.blit(texteffect,(int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale),int(100*desktopscale[0])-(int(100*desktopscale[0])*timeeffect_scale)))
         
         if thirdparttime in range(2720,4960):
-            wholesurface.blit(textoutline,(100-4,100-2))
-            wholesurface.blit(textbleh,(100,100))
+            wholesurface.blit(textoutline,(int(100*desktopscale[0])-4,int(100*desktopscale[0])-2))
+            wholesurface.blit(textbleh,(int(100*desktopscale[0]),int(100*desktopscale[0])))
             windowtextanim_windowsetmode(wholesurface,'TIME',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
         
         if thirdparttime in range(4960,5280):
@@ -2812,23 +2893,23 @@ def windowtextanim(Startingtime):
             if timeeffect_scale > 0:
                 timeeffect_scale = timeeffect_scale**5
 
-            wholesurface = pygame.Surface((textwidth+(200*timeeffect_scale),textheight+(200*timeeffect_scale)),pygame.SRCALPHA)
+            wholesurface = pygame.Surface((textwidth+(int(200*desktopscale[0])*timeeffect_scale),textheight+(int(200*desktopscale[0])*timeeffect_scale)),pygame.SRCALPHA)
 
             text = fonts_faith_collapsing(150).render('TIME',False,(255,0,0))
 
-            wholesurface.blit(textoutline,((100*timeeffect_scale)-4,(100*timeeffect_scale)-2))
-            wholesurface.blit(textbleh,((100*timeeffect_scale),(100*timeeffect_scale)))
+            wholesurface.blit(textoutline,((int(100*desktopscale[0])*timeeffect_scale)-4,(int(100*desktopscale[0])*timeeffect_scale)-2))
+            wholesurface.blit(textbleh,((int(100*desktopscale[0])*timeeffect_scale),(int(100*desktopscale[0])*timeeffect_scale)))
             windowtextanim_windowsetmode(wholesurface,'TIME',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
 
         
 
         if thirdparttime in range(5600,5760): #BE-
             shakeintensity = abs((thirdparttime-5760)/160) / 8
-            if (thirdparttime   -5600) in range(0,10):
-                text = fonts_ithorn(200).render('BE-',False,(255,0,0))
+            if (thirdparttime-5600) in range(0,10):
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BE-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'BE-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-5600) in range(80,90):
-                text = fonts_ithorn(200).render('BE-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BE-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2836,10 +2917,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(5760,5920): #BEFORE
             shakeintensity = abs((thirdparttime-5920)/160) / 8
             if (thirdparttime-5760) in range(0,10):
-                text = fonts_ithorn(200).render('BEFORE',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BEFORE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'BEFORE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-5760) in range(80,90):
-                text = fonts_ithorn(200).render('BEFORE',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BEFORE',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2847,10 +2928,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(5920,6080): #I
             shakeintensity = abs((thirdparttime-6080)/160) / 8
             if (thirdparttime-5920) in range(0,10):
-                text = fonts_ithorn(200).render('I',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'I',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-5920) in range(80,90):
-                text = fonts_ithorn(200).render('I',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2858,10 +2939,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6080,6240): #BLOOM
             shakeintensity = abs((thirdparttime-6240)/160) / 8
             if (thirdparttime-6080) in range(0,10):
-                text = fonts_ithorn(200).render('BLOOM',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BLOOM',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'BLOOM',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6080) in range(80,90):
-                text = fonts_ithorn(200).render('BLOOM',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('BLOOM',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2869,10 +2950,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6240,6400): #IN-
             shakeintensity = abs((thirdparttime-6400)/160) / 8
             if (thirdparttime-6240) in range(0,10):
-                text = fonts_ithorn(200).render('IN-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('IN-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'IN-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6240) in range(80,90):
-                text = fonts_ithorn(200).render('IN-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('IN-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2880,10 +2961,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6400,6560): #INTO
             shakeintensity = abs((thirdparttime-6560)/160) / 8
             if (thirdparttime-6400) in range(0,10):
-                text = fonts_ithorn(200).render('INTO',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('INTO',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'INTO',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6400) in range(80,90):
-                text = fonts_ithorn(200).render('INTO',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('INTO',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2891,10 +2972,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6560,6720): #A
             shakeintensity = abs((thirdparttime-6720)/160) / 8
             if (thirdparttime-6560) in range(0,10):
-                text = fonts_ithorn(200).render('A',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('A',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'A',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6560) in range(80,90):
-                text = fonts_ithorn(200).render('A',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('A',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2902,10 +2983,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6720,6880): #FLO-
             shakeintensity = abs((thirdparttime-6880)/160) / 8
             if (thirdparttime-6720) in range(0,10):
-                text = fonts_ithorn(200).render('FLO-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FLO-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FLO-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6720) in range(80,90):
-                text = fonts_ithorn(200).render('FLO-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FLO-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2913,10 +2994,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(6880,7040): #FLOWER
             shakeintensity = abs((thirdparttime-7040)/160) / 8
             if (thirdparttime-6880) in range(0,10):
-                text = fonts_ithorn(200).render('FLOWER',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FLOWER',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FLOWER',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-6880) in range(80,90):
-                text = fonts_ithorn(200).render('FLOWER',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FLOWER',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2924,10 +3005,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7040,7200): #FIRST
             shakeintensity = abs((thirdparttime-7200)/160) / 8
             if (thirdparttime-7040) in range(0,10):
-                text = fonts_ithorn(200).render('FIRST',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FIRST',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'FIRST',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7040) in range(80,90):
-                text = fonts_ithorn(200).render('FIRST',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('FIRST',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2935,10 +3016,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7200,7360): #I
             shakeintensity = abs((thirdparttime-7360)/160) / 8
             if (thirdparttime-7200) in range(0,10):
-                text = fonts_ithorn(200).render('I',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'I',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7200) in range(80,90):
-                text = fonts_ithorn(200).render('I',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('I',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2946,10 +3027,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7360,7520): #WAN-
             shakeintensity = abs((thirdparttime-7520)/160) / 8
             if (thirdparttime-7360) in range(0,10):
-                text = fonts_ithorn(200).render('WAN-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WAN-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'WAN-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7360) in range(80,90):
-                text = fonts_ithorn(200).render('WAN-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WAN-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2957,10 +3038,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7520,7680): #WANNA
             shakeintensity = abs((thirdparttime-7680)/160) / 8
             if (thirdparttime-7520) in range(0,10):
-                text = fonts_ithorn(200).render('WANNA',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WANNA',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'WANNA',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7520) in range(80,90):
-                text = fonts_ithorn(200).render('WANNA',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('WANNA',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2968,10 +3049,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7680,7840): #SAY
             shakeintensity = abs((thirdparttime-7840)/160) / 8
             if (thirdparttime-7680) in range(0,10):
-                text = fonts_ithorn(200).render('SAY',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('SAY',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'SAY',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7680) in range(80,90):
-                text = fonts_ithorn(200).render('SAY',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('SAY',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -2979,10 +3060,10 @@ def windowtextanim(Startingtime):
         if thirdparttime in range(7840,8000): #GOOD-
             shakeintensity = abs((thirdparttime-8000)/160) / 8
             if (thirdparttime-7840) in range(0,10):
-                text = fonts_ithorn(200).render('GOOD-',False,(255,0,0))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GOOD-',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'GOOD-',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             if (thirdparttime-7840) in range(80,90):
-                text = fonts_ithorn(200).render('GOOD-',False,(255,255,255))
+                text = fonts_ithorn(int(200*desktopscale[0])).render('GOOD-',False,(255,255,255))
                 windowsurfaces_list[windowcurrent].fill((0,255,0))
                 windowsurfaces_list[windowcurrent].blit(text)
                 pygame.draw.lines(windowsurfaces_list[windowcurrent],(128,128,128),False,[(0,0),(windows_list[windowcurrent].size[0]-1,0),(windows_list[windowcurrent].size[0]-1,windows_list[windowcurrent].size[1]-1),(0,windows_list[windowcurrent].size[1]-1),(0,0)])
@@ -3005,13 +3086,13 @@ def windowtextanim(Startingtime):
             textscale = 1-((textscale-1)**2)
 
             if (thirdparttime-8000) in range(0,10):
-                text = fonts_faith_collapsing(100+int(100*textscale)).render('GOODBYE',False,(255,0,0))
+                text = fonts_faith_collapsing(int(100*desktopscale[0])+int(int(100*desktopscale[0])*textscale)).render('GOODBYE',False,(255,0,0))
                 windowtextanim_windowsetmode(text,'GOODBYE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
             else:
                 if (thirdparttime-8000) in range(640,1280):
-                    text = fonts_faith_collapsing(int(200*textscale)).render('GOODBYE',False,(255,255,255))
+                    text = fonts_faith_collapsing(int(int(200*desktopscale[0])*textscale)).render('GOODBYE',False,(255,255,255))
                 if (thirdparttime-8000) in range(0,640):
-                    text = fonts_faith_collapsing(100+int(100*textscale)).render('GOODBYE',False,(255,255,255))
+                    text = fonts_faith_collapsing(int(100*desktopscale[0])+int(int(100*desktopscale[0])*textscale)).render('GOODBYE',False,(255,255,255))
                 windowtextanim_windowsetmode(text,'GOODBYE',windows_list[windowcurrent],windowsurfaces_list[windowcurrent])
 
         if thirdparttime in range(9280,9290):
@@ -3020,7 +3101,6 @@ def windowtextanim(Startingtime):
             windows_list[windowcurrent].position = (0,0)
             windows_list[windowcurrent].size = desktopres
             windowsurfaces_list[windowcurrent].fill((0,255,0))
-            windows_list[windowcurrent].borderless = False
             windows_list[windowcurrent].title = '...'
             windows_list[windowcurrent].flip()
         
@@ -3028,7 +3108,7 @@ def windowtextanim(Startingtime):
 
 
         if nuhuhtime+0.32 > time.perf_counter():
-            nuhuh = fonts_unifont(100).render('No :3',False,(0,0,0))
+            nuhuh = fonts_unifont(int(100*desktopscale[0])).render('No :3',False,(0,0,0))
             windowsurfaces_list[nuhuh_id-1].blit(nuhuh,((windows_list[nuhuh_id-1].size[0]//2)-(nuhuh.get_width() //2),
                                                         (windows_list[nuhuh_id-1].size[1]//2)-(nuhuh.get_height()//2)))
             windows_list[nuhuh_id-1].flip()
@@ -3059,8 +3139,9 @@ def picturedas__perfect_part(Startingtime):
     nuhuhtime = 0
     nuhuh_id = 0
 
-    textahh = fonts_faith_collapsing(200).render('AHH',False,(255,255,255))
-    textahhoutline = fonts_faith_collapsing(204).render('AHH',False,(0,0,0))
+    textahh = fonts_faith_collapsing(int(200*desktopscale[0])).render('AHH',False,(255,255,255))
+    textahhoutline = fonts_faith_collapsing(int(200*desktopscale[0])).render('AHH',False,(0,0,0))
+    textahhoutline = pygame.transform.scale(textahhoutline,(textahhoutline.get_width()+16,textahhoutline.get_height()+16))
     randomtextpos = [(random.randint(0,desktopres[0]-textahh.get_width()),random.randint(0,desktopres[1]-textahh.get_height())),
                      (random.randint(0,desktopres[0]-textahh.get_width()),random.randint(0,desktopres[1]-textahh.get_height())),
                      (random.randint(0,desktopres[0]-textahh.get_width()),random.randint(0,desktopres[1]-textahh.get_height())),
@@ -3089,12 +3170,14 @@ def picturedas__perfect_part(Startingtime):
                      (random.randint(0,desktopres[0]-textahh.get_width()),random.randint(0,desktopres[1]-textahh.get_height())),
                      ]
 
-    while animtime < 100:
+    while animtime < 49.93:
 
         animtime = time.perf_counter() - Startingtime
         animtimems = int(animtime*1000)
 
         firsttimepart = animtimems
+        secondtimepart = animtimems-19200
+        thirdtimepart = animtimems-29920
 
         if firsttimepart in range(0,640):
             textscale = firsttimepart/640
@@ -3105,11 +3188,11 @@ def picturedas__perfect_part(Startingtime):
             
             
             
-            text = fonts_faith_collapsing(int(200*textscale)).render('AAH!',False,(255,255,255))
-            textoutline = fonts_faith_collapsing(int(204*textscale)).render('AAH!',False,(0,0,0))
-            pygame.draw.circle(surface_circle_layer,(0,0,255),(desktopres[0]//2,desktopres[1]//2),text.get_width()//2,100)
+            text = fonts_faith_collapsing(int(int(200*desktopscale[0])*textscale)).render('AAH!',False,(255,255,255))
+            textoutline = fonts_faith_collapsing(int((int(200*desktopscale[0])+4)*textscale)).render('AAH!',False,(0,0,0))
+            pygame.draw.circle(surface_circle_layer,(0,0,255),(desktopres[0]//2,desktopres[1]//2),text.get_width()//2,int(100*desktopscale[0]))
 
-            for i in range(0,100):
+            for i in range(0,int(100*desktopscale[0])):
                 x = random.randint(desktopres[0]//2-text.get_width()//2,desktopres[0]//2+text.get_width()//2)
                 y = random.randint(desktopres[1]//2-text.get_width()//2,desktopres[1]//2+text.get_width()//2)
                 pygame.draw.line(surfacepas_red_noize,pas_colors[random.randint(0,2)],(x,y),(x,y))
@@ -3121,53 +3204,919 @@ def picturedas__perfect_part(Startingtime):
             windows_list[windowcurrent].flip()
 
         if firsttimepart in range(640,19200): #noize
-            
-            if firsttimepart-640 in range(0,40):
-                windowsurfaces_list[windowcurrent].blit(surfacepas_purple_noize)
+            if firsttimepart-640 < 40:
+                windowsurfaces_list[windowcurrent].fill((255,0,0))
+                windows_list[windowcurrent].flip()
             else:
+                windowsurfaces_list[windowcurrent].blit(surfacepas_purple_noize)
                 windowsurfaces_list[windowcurrent].blit(surfacepas_red_noize)
-                for i in range(0,1000):
+                for i in range(0,int(1000*desktopscale[0])):
                     x = random.randint(0,desktopres[0])
                     y = random.randint(0,desktopres[1])
                     pygame.draw.line(surfacepas_red_noize,pas_colors[random.randint(0,2)],(x,y),(x,y))
 
-            windows_list[windowcurrent].flip()
+                windows_list[windowcurrent].flip()
 
 
-        if firsttimepart in range(7360,8640): #ahh1 1-8  
-            textposnum = int((firsttimepart-7360)/160)
-            x = randomtextpos[textposnum][0]+random.randint(-50,50)
-            y = randomtextpos[textposnum][1]+random.randint(-50,50)
-            surfacepas_red_noize.blit(textahhoutline,(x-4,y-2))
+
+        if firsttimepart in range(7280,8560): #ahh1 1-8 
+            textposnum = int((firsttimepart-7280)/160)
+            x = randomtextpos[textposnum][0]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            y = randomtextpos[textposnum][1]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            surfacepas_red_noize.blit(textahhoutline,(x-8,y-8))
             surfacepas_red_noize.blit(textahh,(x,y))
+
+            randomy = random.randint(0,desktopres[1]-1)
+            pygame.draw.line(surfacepas_red_noize,(0,100,0),(0,randomy),(desktopres[0],randomy))
+
+        if firsttimepart in range(8560,12600): #ahh1 1-8 noize fadeout
+            for i in range(0,500):
+                for textnum in range(0,8):
+                    x1 = random.randint(randomtextpos[textnum][0]-int(50*desktopscale[0]),randomtextpos[textnum][0]+textahhoutline.get_width()+int(50*desktopscale[0]))
+                    y1 = random.randint(randomtextpos[textnum][1]-int(50*desktopscale[0]),randomtextpos[textnum][1]+textahhoutline.get_height()+int(50*desktopscale[0]))
+                    pygame.draw.line(surfacepas_red_noize,pas_colors[random.randint(0,2)],(x1,y1),(x1,y1))
+
+
+
+        if firsttimepart in range(12600,13880): #ahh2 1-8  
+            textposnum = 8+int((firsttimepart-12600)/160)
+            x = randomtextpos[textposnum][0]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            y = randomtextpos[textposnum][1]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            surfacepas_red_noize.blit(textahhoutline,(x-8,y-8))
+            surfacepas_red_noize.blit(textahh,(x,y))
+
+            randomy = random.randint(0,desktopres[1]-1)
+            pygame.draw.line(surfacepas_red_noize,(0,100,0),(0,randomy),(desktopres[0],randomy))
+
+        if firsttimepart in range(13880,17920): #ahh2 1-8 noize fadeout
+            for i in range(0,500):
+                for textnum in range(0,8):
+                    x1 = random.randint(randomtextpos[8+textnum][0]-int(50*desktopscale[0]),randomtextpos[8+textnum][0]+textahhoutline.get_width()+int(50*desktopscale[0]))
+                    y1 = random.randint(randomtextpos[8+textnum][1]-int(50*desktopscale[0]),randomtextpos[8+textnum][1]+textahhoutline.get_height()+int(50*desktopscale[0]))
+                    pygame.draw.line(surfacepas_red_noize,pas_colors[random.randint(0,2)],(x1,y1),(x1,y1))
+
+
+
+        if firsttimepart in range(17920,19200): #ahh3 1-8  
+            textposnum = 16+int((firsttimepart-17920)/160)
+            x = randomtextpos[textposnum][0]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            y = randomtextpos[textposnum][1]+random.randint(int(-50*desktopscale[0]),int(50*desktopscale[0]))
+            surfacepas_red_noize.blit(textahhoutline,(x-8,y-8))
+            surfacepas_red_noize.blit(textahh,(x,y))
+
+            randomy = random.randint(0,desktopres[1]-1)
+            pygame.draw.line(surfacepas_red_noize,(0,100,0),(0,randomy),(desktopres[0],randomy))
+
+
+
+        if firsttimepart in range(19200,19840):
+            circleradius = (firsttimepart-19200)/640
+            if circleradius > 0:
+                circleradius = math.sqrt(circleradius)
+
+            pygame.draw.circle(surfacepas_red_noize,(0,100,0),(desktopres[0]//2,desktopres[1]//2),surfacepas_red_noize.get_width()*1.5*circleradius,desktopres[0]+10)
+    
+            pygame.draw.circle(surfacepas_red_noize,(0,255,0),(desktopres[0]//2,desktopres[1]//2),surfacepas_red_noize.get_width()*circleradius,desktopres[0]+10)
             
-
-
-
-
-
-
-
-
-        if firsttimepart in range(19200,19210):
-            windowsurfaces_list[windowcurrent].fill((0,255,0))
+            windowsurfaces_list[windowcurrent].blit(surfacepas_purple_noize)
+            windowsurfaces_list[windowcurrent].blit(surfacepas_red_noize)
             windows_list[windowcurrent].flip()
 
+
+
             
+        if secondtimepart in range(950,960):
+            windows_list[windowcurrent].hide()
+            windows_list[1].position = ((desktopres[0]//2),
+                                        (desktopres[1]//2))
+
+        if secondtimepart in range(960,1920): #TRANSFORMATION
+            if secondtimepart-960 < 10:
+                for i in windows_list:
+                    i.borderless = True
+
+                text = fonts_unifont(int(200*desktopscale[0])).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',windows_list[1],windowsurfaces_list[1])
+                windows_list[1].show()
+
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                        (desktopres[1]//2)-(windows_list[1].size[1]//2))
+
+            binaryscroll_vertical = (secondtimepart-960)/1000
+            binaryscroll_horizontal = (secondtimepart-960)/1000
+
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10101001010010100000110011101010011100011010011111010010100110110000011010100100100110011111001110",False,(100,100,100))
+
+            windowsurfaces_list[1].fill((0,255,0))
+            
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+
+
+            windowsurfaces_list[1].blit(text)
+
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+
+            windows_list[1].flip()
+            
+        if secondtimepart in range(1920,2720): #COMPLETE
+            if secondtimepart-1920 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₵Ø₥₱ⱠɆ₮Ɇ',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (secondtimepart-1920)/1000
+            binaryscroll_horizontal = (secondtimepart-1920)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10000111001111100110110100001001100100010110101001000101",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+
+
+        if secondtimepart in range(2800,3840): #TRANSFORMATION X2
+            if secondtimepart-2800 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (secondtimepart-2800)/1000
+            binaryscroll_horizontal = (secondtimepart-2800)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10101001010010100000110011101010011100011010011111010010100110110000011010100100100110011111001110",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+        if secondtimepart in range(3840,6240): #COMPLETE X2
+            if secondtimepart-3840 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₵Ø₥₱ⱠɆ₮Ɇ',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (secondtimepart-3840)/1000
+            binaryscroll_horizontal = (secondtimepart-3840)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10000111001111100110110100001001100100010110101001000101",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+
+        if secondtimepart in range(6240,9340): #"you are now as you once were" background
+            if secondtimepart-6240 < 10:
+                windows_list[windowcurrent].show()
+                windows_list[windowcurrent].always_on_top = False
+
+            binaryscroll_horizontal = (secondtimepart-6240)/1000 #0 --> 3
+
+            if binaryscroll_horizontal >= 0 and binaryscroll_horizontal < 0.4:
+                binaryscroll_horizontal = (((binaryscroll_horizontal-0.5)**5)/0.25) * 10 + 1.25
+            elif binaryscroll_horizontal >= 0.4 and binaryscroll_horizontal < 2.6:
+                binaryscroll_horizontal = binaryscroll_horizontal/4.41 + 1.16
+            elif binaryscroll_horizontal >= 2.6 and binaryscroll_horizontal < 3:
+                binaryscroll_horizontal = (((binaryscroll_horizontal-2.5)**5)/0.25 + 0.175) * 10
+
+            textbinarysize = int((desktopres[1]/20))
+            textbinary = fonts_unifont(textbinarysize).render("100101011000011101011110010110010011110011100000111011001101001111011011001011100101",False,(100,100,100))
+            windowsurfaces_list[windowcurrent].fill((0,255,0))
+            for i in range(0,20):   
+                for a in range(0,2):    
+                    if i % 2 != 1:
+                        windowsurfaces_list[windowcurrent].blit(textbinary,(0-(i*(textbinarysize))+(binaryscroll_horizontal*int(textbinary.get_width()))-(a*textbinary.get_width())-textbinary.get_width(),
+                                                                              (i*textbinarysize)))
+                    else:
+                        windowsurfaces_list[windowcurrent].blit(textbinary,((i*(textbinarysize))-(binaryscroll_horizontal*int(textbinary.get_width()))+(a*textbinary.get_width())+desktopres[0],
+                                                                            (i*textbinarysize)))
+                        
+            windows_list[windowcurrent].flip()
+
+        if secondtimepart in range(9340,9360):
+            windows_list[windowcurrent].hide()
+
+
+        if secondtimepart in range(6320,6640): #you
+            textcolor = (secondtimepart-6320)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꐔꊿꌈ',False,(textcolor,textcolor,textcolor))
+
+            if secondtimepart-6320 < 10:
+                windows_list[7].show()
+                windowtextanim_windowsetmode(text,'you',windows_list[7],windowsurfaces_list[7])
+                windows_list[7].position = (int(50*desktopscale[0]), 
+                                            int(50*desktopscale[0])) 
+            else:
+                windowsurfaces_list[7].fill((0,255,0))
+                windowsurfaces_list[7].blit(text)
+                pygame.draw.lines(windowsurfaces_list[7],(128,128,128),False,[(0,0),(windows_list[7].size[0]-1,0),(windows_list[7].size[0]-1,windows_list[7].size[1]-1),(0,windows_list[7].size[1]-1),(0,0)])
+                windows_list[7].flip()
+                
+
+        if secondtimepart in range(6480,6800): #are
+            textcolor = (secondtimepart-6480)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꁲꌅꑀ',False,(textcolor,textcolor,textcolor))
+            
+            if secondtimepart-6480 < 10:
+                windows_list[6].show()
+                windowtextanim_windowsetmode(text,'are',windows_list[6],windowsurfaces_list[6])
+                windows_list[6].position = (int(50*desktopscale[0]),
+                                            (desktopres[1]//2)-(windows_list[6].size[1]//2))
+            else:
+                windowsurfaces_list[6].fill((0,255,0))
+                windowsurfaces_list[6].blit(text)
+                pygame.draw.lines(windowsurfaces_list[6],(128,128,128),False,[(0,0),(windows_list[6].size[0]-1,0),(windows_list[6].size[0]-1,windows_list[6].size[1]-1),(0,windows_list[6].size[1]-1),(0,0)])
+                windows_list[6].flip()
+
+
+        if secondtimepart in range(6560,6880): #now
+            textcolor = (secondtimepart-6560)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꃔꊿꅐ',False,(textcolor,textcolor,textcolor))
+
+            if secondtimepart-6560 < 10:
+                windows_list[5].show()
+                windowtextanim_windowsetmode(text,'now',windows_list[5],windowsurfaces_list[5])
+                windows_list[5].position = (int(50*desktopscale[0]),
+                                            desktopres[1]-windows_list[5].size[1]-int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[5].fill((0,255,0))
+                windowsurfaces_list[5].blit(text)
+                pygame.draw.lines(windowsurfaces_list[5],(128,128,128),False,[(0,0),(windows_list[5].size[0]-1,0),(windows_list[5].size[0]-1,windows_list[5].size[1]-1),(0,windows_list[5].size[1]-1),(0,0)])
+                windows_list[5].flip()
+
+
+        if secondtimepart in range(7040,7360): #as
+            textcolor = (secondtimepart-7040)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꁲꈜ',False,(textcolor,textcolor,textcolor))
+
+            if secondtimepart-7040 < 10:
+                windows_list[4].show()
+                windowtextanim_windowsetmode(text,'as',windows_list[4],windowsurfaces_list[4])
+                windows_list[4].position = ((desktopres[0]//2)-(windows_list[4].size[0]//2),
+                                            int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[4].fill((0,255,0))
+                windowsurfaces_list[4].blit(text)
+                pygame.draw.lines(windowsurfaces_list[4],(128,128,128),False,[(0,0),(windows_list[4].size[0]-1,0),(windows_list[4].size[0]-1,windows_list[4].size[1]-1),(0,windows_list[4].size[1]-1),(0,0)])
+                windows_list[4].flip()
+
+
+        if secondtimepart in range(7360,7680): #you
+            textcolor = (secondtimepart-7360)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('と回凵',False,(textcolor,textcolor,textcolor))
+
+            if secondtimepart-7360 < 10:
+                windows_list[3].show()
+                windowtextanim_windowsetmode(text,'you',windows_list[3],windowsurfaces_list[3])
+                windows_list[3].position = ((desktopres[0]//2)-(windows_list[3].size[0]//2),
+                                            (desktopres[1]-int(50*desktopscale[0])-windows_list[3].size[1]))
+            else: 
+                windowsurfaces_list[3].fill((0,255,0))
+                windowsurfaces_list[3].blit(text)
+                pygame.draw.lines(windowsurfaces_list[3],(128,128,128),False,[(0,0),(windows_list[3].size[0]-1,0),(windows_list[3].size[0]-1,windows_list[3].size[1]-1),(0,windows_list[3].size[1]-1),(0,0)])
+                windows_list[3].flip()
+
+
+        if secondtimepart in range(7520,7840): #once
+            textcolor = (secondtimepart-7520)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꊿꃔꏳꑀ',False,(textcolor,textcolor,textcolor))
+
+            if secondtimepart-7520 < 10:
+                windows_list[2].show()
+                windowtextanim_windowsetmode(text,'once',windows_list[2],windowsurfaces_list[2])
+                windows_list[2].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[2].size[0]),
+                                            int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[2].fill((0,255,0))
+                windowsurfaces_list[2].blit(text)
+                pygame.draw.lines(windowsurfaces_list[2],(128,128,128),False,[(0,0),(windows_list[2].size[0]-1,0),(windows_list[2].size[0]-1,windows_list[2].size[1]-1),(0,windows_list[2].size[1]-1),(0,0)])
+                windows_list[2].flip()
+
+
+        if secondtimepart in range(7840,8160): #were
+            textcolor = (secondtimepart-7840)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꅐꑀꌅꑀ',False,(textcolor,textcolor,textcolor))
+
+
+            if secondtimepart-7840 < 10:
+                windows_list[1].show()
+                windowtextanim_windowsetmode(text,'were',windows_list[1],windowsurfaces_list[1])
+                windows_list[1].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[1].size[0]),
+                                            desktopres[1]-windows_list[1].size[1]-int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[1].fill((0,255,0))
+                windowsurfaces_list[1].blit(text)
+                pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+                windows_list[1].flip()
+
+
+        if secondtimepart in range(8960,10880): #BEAUTIFUL
+            
+            if secondtimepart-8960 < 20:
+                text = fonts_unifont(int(40*desktopscale[0])).render(BEAUTIFUL_BLOODY[0],False,(255,255,255))
+                surface_static = pygame.Surface((text.get_width(),
+                                                 text.get_height()*(len(BEAUTIFUL_BLOODY)-1)),
+                                                 pygame.SRCALPHA)
+                for i in range(0,len(BEAUTIFUL_BLOODY)):
+                    text = fonts_unifont(int(40*desktopscale[0])).render(BEAUTIFUL_BLOODY[i],False,(255,255,255))
+                    surface_static.blit(text,(0,
+                                        text.get_height()*i))
+                    
+
+            scale = (secondtimepart-8960)/1280        #0 --> 1
+            
+            if scale <  1:
+                scale = 1-(scale-1)**2
+            if scale >= 1:
+                scale = (secondtimepart-10240)/640    #0 --> 1
+                scale = 1-scale**3
+
+            rotation = (secondtimepart-8960)/1920 #0 --> 1
+            rotation = math.sqrt(rotation)*10
+
+            surfacerotated = pygame.Surface((surface_static.get_width(),surface_static.get_height()),pygame.SRCALPHA)
+            surfacerotated.blit(surface_static)
+            surfacerotated = pygame.transform.rotate(surfacerotated,0-rotation)
+            surfacerotated = pygame.transform.scale_by(surfacerotated,scale)
+
+            binaryscroll_vertical = (secondtimepart-8960)/160
+            binaryscroll_horizontal = (secondtimepart-8960)/160
+
+            textbinarysize = int(20*desktopscale[0])
+            textbinary = fonts_unifont(textbinarysize).render("100001010001011000001101010110101001001001100011010101011001100",False,(100,100,100))
+            
+            surface_base = pygame.Surface((surfacerotated.get_width(),surfacerotated.get_height()),pygame.SRCALPHA)
+            
+            for b in range(0,10):
+                for i in range(0,10):
+                    for a in range(0,20):    
+                        if i % 2 != 1:
+                            surface_base.blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*text.get_height())+((9-a)*textbinary.get_width()),
+                                                            (i*textbinarysize)+((4-b)*(int(20*desktopscale[0])*10))+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            surface_base.blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*text.get_height())+((9-a)*textbinary.get_width()),
+                                                            (i*textbinarysize)+((4-b)*(int(20*desktopscale[0])*10))+(binaryscroll_vertical*textbinarysize)))
+
+            surface_base.blit(surfacerotated)
+
+            if surface_base.get_width() > 0 and surface_base.get_height() > 0:
+                windowtextanim_windowsetmode(surface_base,'BEAUTIFUL',windows_list[7],windowsurfaces_list[7])
+                windows_list[7].position = ((desktopres[0]//2)-(windows_list[7].size[0]//2), 
+                                            (desktopres[1]//2)-(windows_list[7].size[1]//2)) 
+        
+        if secondtimepart in range(10880,10900): #BEAUTIFUL
+            windows_list[7].hide()
+
+        if secondtimepart in range(9000,9020):
+            windows_list[6].hide()
+        if secondtimepart in range(9040,9060):
+            windows_list[5].hide()
+        if secondtimepart in range(9080,9100):
+            windows_list[4].hide()
+        if secondtimepart in range(9120,9140):
+            windows_list[3].hide()
+        if secondtimepart in range(9160,9180):
+            windows_list[2].hide()
+        if secondtimepart in range(9200,9220):
+            windows_list[1].hide()
+
+
+
+
+
+
+
+
+
+
+        if thirdtimepart in range(950,960):
+            windows_list[windowcurrent].hide()
+            windows_list[1].position = ((desktopres[0]//2),
+                                        (desktopres[1]//2))
+
+        if thirdtimepart in range(960,1920): #TRANSFORMATION
+            if thirdtimepart-960 < 10:
+                for i in windows_list:
+                    i.borderless = True
+
+                text = fonts_unifont(int(200*desktopscale[0])).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',windows_list[1],windowsurfaces_list[1])
+                windows_list[1].show()
+
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                        (desktopres[1]//2)-(windows_list[1].size[1]//2))
+
+            binaryscroll_vertical = (thirdtimepart-960)/1000
+            binaryscroll_horizontal = (thirdtimepart-960)/1000
+
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10101001010010100000110011101010011100011010011111010010100110110000011010100100100110011111001110",False,(100,100,100))
+
+            windowsurfaces_list[1].fill((0,255,0))
+            
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+
+
+            windowsurfaces_list[1].blit(text)
+
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+
+            windows_list[1].flip()
+            
+        if thirdtimepart in range(1920,2720): #COMPLETE
+            if thirdtimepart-1920 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₵Ø₥₱ⱠɆ₮Ɇ',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (thirdtimepart-1920)/1000
+            binaryscroll_horizontal = (thirdtimepart-1920)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10000111001111100110110100001001100100010110101001000101",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+
+
+        if thirdtimepart in range(2800,3840): #TRANSFORMATION X2
+            if thirdtimepart-2800 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (thirdtimepart-2800)/1000
+            binaryscroll_horizontal = (thirdtimepart-2800)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₮Ɽ₳₦₴₣ØⱤ₥₳₮łØ₦',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10101001010010100000110011101010011100011010011111010010100110110000011010100100100110011111001110",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+        if thirdtimepart in range(3840,5120): #COMPLETE X2
+            if thirdtimepart-3840 < 10:
+                text = fonts_unifont(int(200*desktopscale[0])).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+                windowtextanim_windowsetmode(text,'₵Ø₥₱ⱠɆ₮Ɇ',windows_list[1],windowsurfaces_list[1])
+            windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                                    (desktopres[1]//2)-(windows_list[1].size[1]//2))
+            binaryscroll_vertical = (thirdtimepart-3840)/1000
+            binaryscroll_horizontal = (thirdtimepart-3840)/1000
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            text = fonts_unifont(textsize).render('₵Ø₥₱ⱠɆ₮Ɇ',False,(255,255,255))
+            textbinary = fonts_unifont(textbinarysize).render("10000111001111100110110100001001100100010110101001000101",False,(100,100,100))
+            windowsurfaces_list[1].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,7):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize//4))+((2-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+            windowsurfaces_list[1].blit(text)
+            pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            windows_list[1].flip()
+
+
+        if thirdtimepart in range(5120,8220): #"you are now as you once were" background
+            if thirdtimepart-5120 < 10:
+                windows_list[windowcurrent].show()
+                windows_list[windowcurrent].always_on_top = False
+
+            binaryscroll_horizontal = (thirdtimepart-5120)/1000 #0 --> 3
+
+            if binaryscroll_horizontal >= 0 and binaryscroll_horizontal < 0.4:
+                binaryscroll_horizontal = (((binaryscroll_horizontal-0.5)**5)/0.25) * 10 + 1.25
+            elif binaryscroll_horizontal >= 0.4 and binaryscroll_horizontal < 2.6:
+                binaryscroll_horizontal = binaryscroll_horizontal/4.41 + 1.16
+            elif binaryscroll_horizontal >= 2.6 and binaryscroll_horizontal < 3:
+                binaryscroll_horizontal = (((binaryscroll_horizontal-2.5)**5)/0.25 + 0.175) * 10
+
+            textbinarysize = int((desktopres[1]/20))
+            textbinary = fonts_unifont(textbinarysize).render("100101011000011101011110010110010011110011100000111011001101001111011011001011100101",False,(100,100,100))
+            windowsurfaces_list[windowcurrent].fill((0,255,0))
+            for i in range(0,20):   
+                for a in range(0,2):    
+                    if i % 2 != 1:
+                        windowsurfaces_list[windowcurrent].blit(textbinary,(0-(i*(textbinarysize))+(binaryscroll_horizontal*int(textbinary.get_width()))-(a*textbinary.get_width())-textbinary.get_width(),
+                                                                              (i*textbinarysize)))
+                    else:
+                        windowsurfaces_list[windowcurrent].blit(textbinary,((i*(textbinarysize))-(binaryscroll_horizontal*int(textbinary.get_width()))+(a*textbinary.get_width())+desktopres[0],
+                                                                            (i*textbinarysize)))
+                        
+            windows_list[windowcurrent].flip()
+
+        if thirdtimepart in range(8220,8240):
+            windows_list[windowcurrent].hide()
+
+
+        if thirdtimepart in range(5200,5520): #you
+            textcolor = (thirdtimepart-5200)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꐔꊿꌈ',False,(textcolor,textcolor,textcolor))
+
+            if thirdtimepart-5200 < 10:
+                windows_list[7].show()
+                windowtextanim_windowsetmode(text,'you',windows_list[7],windowsurfaces_list[7])
+                windows_list[7].position = (int(50*desktopscale[0]), 
+                                            int(50*desktopscale[0])) 
+            else:
+                windowsurfaces_list[7].fill((0,255,0))
+                windowsurfaces_list[7].blit(text)
+                pygame.draw.lines(windowsurfaces_list[7],(128,128,128),False,[(0,0),(windows_list[7].size[0]-1,0),(windows_list[7].size[0]-1,windows_list[7].size[1]-1),(0,windows_list[7].size[1]-1),(0,0)])
+                windows_list[7].flip()
+                
+
+        if thirdtimepart in range(5360,5680): #are
+            textcolor = (thirdtimepart-5360)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꁲꌅꑀ',False,(textcolor,textcolor,textcolor))
+            
+            if thirdtimepart-5360 < 10:
+                windows_list[6].show()
+                windowtextanim_windowsetmode(text,'are',windows_list[6],windowsurfaces_list[6])
+                windows_list[6].position = (int(50*desktopscale[0]),
+                                            (desktopres[1]//2)-(windows_list[6].size[1]//2))
+            else:
+                windowsurfaces_list[6].fill((0,255,0))
+                windowsurfaces_list[6].blit(text)
+                pygame.draw.lines(windowsurfaces_list[6],(128,128,128),False,[(0,0),(windows_list[6].size[0]-1,0),(windows_list[6].size[0]-1,windows_list[6].size[1]-1),(0,windows_list[6].size[1]-1),(0,0)])
+                windows_list[6].flip()
+
+
+        if thirdtimepart in range(5440,5760): #now
+            textcolor = (thirdtimepart-5440)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꃔꊿꅐ',False,(textcolor,textcolor,textcolor))
+
+            if thirdtimepart-5440 < 10:
+                windows_list[5].show()
+                windowtextanim_windowsetmode(text,'now',windows_list[5],windowsurfaces_list[5])
+                windows_list[5].position = (int(50*desktopscale[0]),
+                                            desktopres[1]-windows_list[5].size[1]-int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[5].fill((0,255,0))
+                windowsurfaces_list[5].blit(text)
+                pygame.draw.lines(windowsurfaces_list[5],(128,128,128),False,[(0,0),(windows_list[5].size[0]-1,0),(windows_list[5].size[0]-1,windows_list[5].size[1]-1),(0,windows_list[5].size[1]-1),(0,0)])
+                windows_list[5].flip()
+
+
+        if thirdtimepart in range(5920,6240): #as
+            textcolor = (thirdtimepart-5920)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꁲꈜ',False,(textcolor,textcolor,textcolor))
+
+            if thirdtimepart-5920 < 10:
+                windows_list[4].show()
+                windowtextanim_windowsetmode(text,'as',windows_list[4],windowsurfaces_list[4])
+                windows_list[4].position = ((desktopres[0]//2)-(windows_list[4].size[0]//2),
+                                            int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[4].fill((0,255,0))
+                windowsurfaces_list[4].blit(text)
+                pygame.draw.lines(windowsurfaces_list[4],(128,128,128),False,[(0,0),(windows_list[4].size[0]-1,0),(windows_list[4].size[0]-1,windows_list[4].size[1]-1),(0,windows_list[4].size[1]-1),(0,0)])
+                windows_list[4].flip()
+
+
+        if thirdtimepart in range(6240,6560): #you
+            textcolor = (thirdtimepart-6240)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('と回凵',False,(textcolor,textcolor,textcolor))
+
+            if thirdtimepart-6240 < 10:
+                windows_list[3].show()
+                windowtextanim_windowsetmode(text,'you',windows_list[3],windowsurfaces_list[3])
+                windows_list[3].position = ((desktopres[0]//2)-(windows_list[3].size[0]//2),
+                                            (desktopres[1]-int(50*desktopscale[0])-windows_list[3].size[1]))
+            else: 
+                windowsurfaces_list[3].fill((0,255,0))
+                windowsurfaces_list[3].blit(text)
+                pygame.draw.lines(windowsurfaces_list[3],(128,128,128),False,[(0,0),(windows_list[3].size[0]-1,0),(windows_list[3].size[0]-1,windows_list[3].size[1]-1),(0,windows_list[3].size[1]-1),(0,0)])
+                windows_list[3].flip()
+
+
+        if thirdtimepart in range(6400,6720): #once
+            textcolor = (thirdtimepart-6400)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꊿꃔꏳꑀ',False,(textcolor,textcolor,textcolor))
+
+            if thirdtimepart-6400 < 10:
+                windows_list[2].show()
+                windowtextanim_windowsetmode(text,'once',windows_list[2],windowsurfaces_list[2])
+                windows_list[2].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[2].size[0]),
+                                            int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[2].fill((0,255,0))
+                windowsurfaces_list[2].blit(text)
+                pygame.draw.lines(windowsurfaces_list[2],(128,128,128),False,[(0,0),(windows_list[2].size[0]-1,0),(windows_list[2].size[0]-1,windows_list[2].size[1]-1),(0,windows_list[2].size[1]-1),(0,0)])
+                windows_list[2].flip()
+
+
+        if thirdtimepart in range(6720,7040): #were
+            textcolor = (thirdtimepart-6720)/320
+            textcolor = textcolor**3
+            textcolor = int(255*textcolor)
+            text = fonts_unifont(int(150*desktopscale[0])).render('ꅐꑀꌅꑀ',False,(textcolor,textcolor,textcolor))
+
+
+            if thirdtimepart-6720 < 10:
+                windows_list[1].show()
+                windowtextanim_windowsetmode(text,'were',windows_list[1],windowsurfaces_list[1])
+                windows_list[1].position = ((desktopres[0]-int(50*desktopscale[0])-windows_list[1].size[0]),
+                                            desktopres[1]-windows_list[1].size[1]-int(50*desktopscale[0]))
+            else: 
+                windowsurfaces_list[1].fill((0,255,0))
+                windowsurfaces_list[1].blit(text)
+                pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+                windows_list[1].flip()
+
+
+        if thirdtimepart in range(7840,9760): #BEAUTIFUL
+            
+            if thirdtimepart-7840 < 20:
+                text = fonts_unifont(int(40*desktopscale[0])).render(BEAUTIFUL_BLOODY[0],False,(255,255,255))
+                surface_static = pygame.Surface((text.get_width(),
+                                                 text.get_height()*(len(BEAUTIFUL_BLOODY)-1)),
+                                                 pygame.SRCALPHA)
+                for i in range(0,len(BEAUTIFUL_BLOODY)):
+                    text = fonts_unifont(int(40*desktopscale[0])).render(BEAUTIFUL_BLOODY[i],False,(255,255,255))
+                    surface_static.blit(text,(0,
+                                        text.get_height()*i))
+                    
+
+            scale = (thirdtimepart-7840)/1280        #0 --> 1
+            
+            if scale <  1:
+                scale = 1-(scale-1)**2
+            if scale >= 1:
+                scale = (thirdtimepart-9120)/640    #0 --> 1
+                scale = 1-scale**3
+
+            rotation = (thirdtimepart-7840)/1920 #0 --> 1
+            rotation = math.sqrt(rotation)*10
+
+            surfacerotated = pygame.Surface((surface_static.get_width(),surface_static.get_height()),pygame.SRCALPHA)
+            surfacerotated.blit(surface_static)
+            surfacerotated = pygame.transform.rotate(surfacerotated,0-rotation)
+            surfacerotated = pygame.transform.scale_by(surfacerotated,scale)
+
+            binaryscroll_vertical = (thirdtimepart-7840)/160
+            binaryscroll_horizontal = (thirdtimepart-7840)/160
+
+            textbinarysize = int(20*desktopscale[0])
+            textbinary = fonts_unifont(textbinarysize).render("100001010001011000001101010110101001001001100011010101011001100",False,(100,100,100))
+            
+            surface_base = pygame.Surface((surfacerotated.get_width(),surfacerotated.get_height()),pygame.SRCALPHA)
+            
+            for b in range(0,10):
+                for i in range(0,10):
+                    for a in range(0,20):    
+                        if i % 2 != 1:
+                            surface_base.blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*text.get_height())+((9-a)*textbinary.get_width()),
+                                                            (i*textbinarysize)+((4-b)*(int(20*desktopscale[0])*10))+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            surface_base.blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*text.get_height())+((9-a)*textbinary.get_width()),
+                                                            (i*textbinarysize)+((4-b)*(int(20*desktopscale[0])*10))+(binaryscroll_vertical*textbinarysize)))
+
+            surface_base.blit(surfacerotated)
+
+            if surface_base.get_width() > 0 and surface_base.get_height() > 0:
+                windowtextanim_windowsetmode(surface_base,'BEAUTIFUL',windows_list[7],windowsurfaces_list[7])
+                windows_list[7].position = ((desktopres[0]//2)-(windows_list[7].size[0]//2), 
+                                            (desktopres[1]//2)-(windows_list[7].size[1]//2)) 
+        
+        if thirdtimepart in range(9760,9780): #BEAUTIFUL
+            windows_list[7].hide()
+
+        if thirdtimepart in range(7880,7900):
+            windows_list[6].hide()
+        if thirdtimepart in range(7920,7940):
+            windows_list[5].hide()
+        if thirdtimepart in range(7960,7980):
+            windows_list[4].hide()
+        if thirdtimepart in range(8000,8020):
+            windows_list[3].hide()
+        if thirdtimepart in range(8040,8060):
+            windows_list[2].hide()
+        if thirdtimepart in range(8080,8100):
+            windows_list[1].hide()
+
+
+
+        if thirdtimepart in range(9920,20000): #you
+            text = fonts_unifont(textsize).render('ɎØɄ',False,(255,255,255))
+            text = pygame.transform.scale(text,(text.get_width()*6,text.get_height()))
+            if thirdtimepart-9920 < 10:
+                windowtextanim_windowsetmode(text,'YOU',windows_list[1],windowsurfaces_list[1])
+                windows_list[1].show()
+
+                windows_list[1].position = ((desktopres[0]//2)-(windows_list[1].size[0]//2),
+                                            (desktopres[1]//2)-(windows_list[1].size[1]))
+
+            binaryscroll_vertical = (thirdtimepart-9920)/1000
+            binaryscroll_horizontal = (thirdtimepart-9920)/400
+
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            
+            textbinary = fonts_unifont(textbinarysize).render("101100110011111010101",False,(100,100,100))
+
+            windowsurfaces_list[1].fill((0,255,0))
+            
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,31):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize))+((20-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[1].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize))+((20-a)*textbinary.get_width()),
+                                                                                (i*textbinarysize)+((1-b)*textsize)+(binaryscroll_vertical*textbinarysize)))
+
+            if thirdtimepart < 10880:
+                windowsurfaces_list[1].blit(text)
+                pygame.draw.lines(windowsurfaces_list[1],(128,128,128),False,[(0,0),(windows_list[1].size[0]-1,0),(windows_list[1].size[0]-1,windows_list[1].size[1]-1),(0,windows_list[1].size[1]-1),(0,0)])
+            else:
+                windows_list[1].always_on_top = False
+            windows_list[1].flip()
+
+
+
+
+        if thirdtimepart in range(10080,20000): #are
+            text = fonts_unifont(int(200*desktopscale[0])).render('₳ⱤɆ',False,(255,255,255))
+            text = pygame.transform.scale(text,(text.get_width()*6,text.get_height()))
+            if thirdtimepart-10080 < 10:
+                windowtextanim_windowsetmode(text,'ARE',windows_list[2],windowsurfaces_list[2])
+                windows_list[2].show()
+                windows_list[2].position = ((desktopres[0]//2)-(windows_list[2].size[0]//2),
+                                            (desktopres[1]//2))
+            binaryscroll_vertical = (thirdtimepart-10080)/1000
+            binaryscroll_horizontal = (thirdtimepart-10080)/400
+            textsize = int(200*desktopscale[0])
+            textbinarysize = int(20*desktopscale[0])
+            textbinary = fonts_unifont(textbinarysize).render("100000110100101000101",False,(100,100,100))
+            windowsurfaces_list[2].fill((0,255,0))
+            for b in range(0,3):
+                for i in range(0,10):
+                    for a in range(0,31):    
+                        if i % 2 != 1:
+                            windowsurfaces_list[2].blit(textbinary,(0-(i*(textbinarysize*3))-(binaryscroll_horizontal*int(textsize))+((20-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+                        else:
+                            windowsurfaces_list[2].blit(textbinary,(0-(i*(textbinarysize*3))+(binaryscroll_horizontal*int(textsize))+((20-a)*textbinary.get_width()),
+                                                                                  (i*textbinarysize)+((1-b)*textsize)-(binaryscroll_vertical*textbinarysize)))
+            
+            if thirdtimepart < 10880:
+                windowsurfaces_list[2].blit(text)
+                pygame.draw.lines(windowsurfaces_list[2],(128,128,128),False,[(0,0),(windows_list[2].size[0]-1,0),(windows_list[2].size[0]-1,windows_list[2].size[1]-1),(0,windows_list[2].size[1]-1),(0,0)])
+            else:
+                windows_list[2].always_on_top = False
+            
+            windows_list[2].flip()
+
+
+        if thirdtimepart in range(10880,20000): #DOGMATICA
+            
+            windowsurfaces_list[3].fill((0,255,0))
+            text = fonts_unifont(int(40*desktopscale[0])).render(DOGMATICA_BLOODY[0],False,(255,255,255))
+            if thirdtimepart-10880 < 20:
+                windows_list[3].title = 'DOGMATICA'
+                windows_list[3].size = (text.get_width(),text.get_height()*(len(DOGMATICA_BLOODY)-1))
+                windows_list[3].position = ((desktopres[0]//2)-(windows_list[3].size[0]//2), 
+                                            (desktopres[1]//2)-(windows_list[3].size[1]//2)) 
+                windows_list[3].show()
+                
+            numoflines_start = (thirdtimepart-18400) // 160
+            if numoflines_start < 0:
+                numoflines_start = 0
+            if numoflines_start > len(DOGMATICA_BLOODY)-1:
+                numoflines_start = len(DOGMATICA_BLOODY)-1
+            
+            numoflines_end = (thirdtimepart-10720) // 160
+            if numoflines_end > len(DOGMATICA_BLOODY):
+                numoflines_end = len(DOGMATICA_BLOODY)
+
+            for i in range(numoflines_start,numoflines_end):
+                text = fonts_unifont(int(40*desktopscale[0])).render(DOGMATICA_BLOODY[i],False,(255,255,255))
+                windowsurfaces_list[3].blit(text,(0,
+                                                  text.get_height()*i))
+                    
+            windows_list[3].flip()
+
 
 
 
 
 
         if nuhuhtime+0.32 > time.perf_counter():
-            nuhuh = fonts_unifont(100).render('No :3',False,(0,0,0))
+            nuhuh = fonts_unifont(int(100*desktopscale[0])).render('No :3',False,(0,0,0))
             windowsurfaces_list[nuhuh_id-1].blit(nuhuh,((windows_list[nuhuh_id-1].size[0]//2)-(nuhuh.get_width() //2),
                                                         (windows_list[nuhuh_id-1].size[1]//2)-(nuhuh.get_height()//2)))
             windows_list[nuhuh_id-1].flip()
 
-        CLOCK.tick()
         for event in pygame.event.get():
-            print(CLOCK.get_fps())
             if event.type == pygame.WINDOWCLOSE:
                 nuhuhtime = time.perf_counter()
                 nuhuh_id = event.window.id
@@ -3199,7 +4148,8 @@ def windowtextanim_windowsetmode(text_surface,text,
 
 pas_colors = [(255,0,0),(0,0,0),(255,255,255),(255,0,255)]
 surfacepas_purple_noize = pygame.Surface(desktopres)
-surfacepas_red_noize = pygame.Surface(desktopres)
+surfacepas_red_noize = pygame.Surface(desktopres,pygame.SRCCOLORKEY)
+surfacepas_red_noize.set_colorkey((0,100,0))
 
 surface_circle_layer = pygame.Surface(desktopres,pygame.SRCCOLORKEY)
 surface_circle_layer.set_colorkey((0,0,255))
