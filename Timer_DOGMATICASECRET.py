@@ -10,26 +10,38 @@
 import time
 import os
 
+
 #DATE format:        XX.XX.XXXX
 #TIME format:        XX:XX:XX
 
-filefolder = os.path.dirname(os.path.realpath(__file__))
-slash = os.sep
 
 try:
+    filefolder = os.path.dirname(os.path.realpath(__file__))
+    slash = os.sep
     dateandtimefile_lines = open(filefolder+slash+'Date_And_Time.txt','r',encoding='utf-8').readlines()
 except FileNotFoundError:
-    print('Date_And_Time.txt should be in the same dir as this timer. I dont see it')
-    time.sleep(120)
-    exit()
+    try:
+        import sys
+        filefolder = os.path.dirname(os.path.realpath(sys.executable))
+        slash = os.sep
+        dateandtimefile_lines = open(filefolder+slash+'Date_And_Time.txt','r',encoding='utf-8').readlines()
+    except FileNotFoundError:
+        print('Date_And_Time.txt should be in the same dir as this timer. I dont see it')
+        time.sleep(120)
+        exit()
 
 for i in range(0,len(dateandtimefile_lines)):
-    if dateandtimefile_lines[i].lower()[0:13] == 'startingpoint':
-        startingpointdate = dateandtimefile_lines[i+1][0:10]
-        startingpointtime = dateandtimefile_lines[i+2][0:8]
-    if dateandtimefile_lines[i].lower()[0:8] == 'deadline':
-        deadlinedate = dateandtimefile_lines[i+1][0:10]
-        deadlinetime = dateandtimefile_lines[i+2][0:8]
+    try:
+        if dateandtimefile_lines[i].lower()[0:13] == 'startingpoint':
+            startingpointdate = dateandtimefile_lines[i+1][0:10]
+            startingpointtime = dateandtimefile_lines[i+2][0:8]
+        if dateandtimefile_lines[i].lower()[0:8] == 'deadline':
+            deadlinedate = dateandtimefile_lines[i+1][0:10]
+            deadlinetime = dateandtimefile_lines[i+2][0:8]
+    except IndexError:
+        print('The information placement in the file is wrong')
+        time.sleep(120)
+        exit()
 
 
 months = {
